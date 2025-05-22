@@ -1,0 +1,385 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+section, p{
+    
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Garamond','Courier New', Courier, monospace;
+}
+.section-1 {
+    padding:35px;
+    background-color: rgb(243, 243, 243);
+    margin-bottom : 15px;
+    /* justify-content: center; */
+
+    /* text-align: center; */
+}
+
+.section-1 img{
+    width: 300px ;
+    margin: auto;
+    display: block;
+}
+
+
+.section-2{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: black;
+   
+}
+.section-2 img{
+    width: 450px;
+    margin: 20px;
+}
+
+/* .man-woman{
+    display: block;
+} */
+.new-arrivals{
+    
+    text-align: center;
+   
+    background-color: black;
+
+    margin: 200px;
+    
+}
+
+.new-arrivals p{
+    font-size: 70px;
+    color: white;
+    font-family: 'Garamond','Courier New', Courier, monospace;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.new-arrivals button{
+    padding: 20px 40px;
+    border: solid 2px white;
+    background: black;
+    font-size: 20px;
+    color: white;
+
+    font-family:'Garamond','Courier New', Courier, monospace;
+
+    transition: 0.6s;
+}
+
+.new-arrivals button:hover{
+    background-color: rgb(76, 76, 76);
+}
+
+.trending{
+    text-align: center;
+}
+.trending p{
+    font-size: 50px;
+
+
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 150px;
+}
+    
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 5;
+}
+
+.contact{
+    background-color: white;
+     padding: 35px;
+
+}
+
+.contact p{
+    color: black;
+    font-weight: bold;
+   
+}
+
+.contact li{
+    color: black;
+    text-transform: capitalize;
+    list-style-type: none;
+}
+
+.contact ul{
+    padding: 0px;
+}
+
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+    
+.div12 {
+    grid-row: span 3 / span 3;
+}
+
+.div22 {
+    grid-row: span 3 / span 3;
+}
+
+.div42{
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+
+.div52 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+}
+footer p{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garamond','Arial', sans-serif;
+    
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Navbar logo */
+.navbar-logo {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.navbar-logo img {
+    width: 150px;
+}
+
+/* .navbar-logo span::after {
+    content: "LUXURY";
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #fff;
+} */
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links.left {
+    margin-right: auto;
+}
+
+.nav-links.right {
+    margin-left: auto;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #d3c0a6;
+}
+
+/* Dropdown menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    min-width: 200px;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+.dropdown-content.currency {
+    min-width: 100px;
+    right: 0;
+    left: auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-column {
+    flex: 1;
+}
+
+.dropdown-column h4 {
+    font-size: 14px;
+    color: #d3c0a6;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.dropdown-column ul {
+    list-style: none;
+}
+
+.dropdown-column ul li {
+    margin-bottom: 8px;
+}
+
+.dropdown-column ul li a {
+    font-size: 13px;
+    color: #ccc;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.dropdown-column ul li a:hover {
+    color: #d3c0a6;
+}
+
+/* Navbar icons */
+.navbar-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar-icons a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icons a:hover {
+    color: #d3c0a6;
+}
+
+.cart-count {
+    background-color: #fff;
+    color: #1a1a1a;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-logo {
+        order: 1;
+    }
+
+    .nav-links.left, .nav-links.right {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        min-width: 100%;
+        padding: 10px;
+    }
+
+    .navbar-logo span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .navbar-icons a {
+        font-size: 16px;
+    }
+}

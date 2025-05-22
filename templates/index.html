@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/style.css')}}">
+    <style>
+        .docker{
+            color: black;
+            text-transform: capitalize;
+
+        }
+    </style>
+    <title>Saint Luxury YN</title>
+
+<body>
+    <header class="navbar">
+    <div class="navbar-container">
+        <!-- Left Navigation -->
+        <nav class="navbar-main">
+            <ul class="nav-links left">
+                <li><a href="#">WHAT'S NEW</a></li>
+                <li class="dropdown">
+                    <a href="#">MEN</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-column">
+                            <h4>CLOTHING</h4>
+                            <ul>
+                                <li><a href="#">T-Shirts & Polo Shirts</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Pants & Trousers</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Jackets</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <h4>SHOES</h4>
+                            <ul>
+                                <li><a href="#">Sneakers</a></li>
+                                <li><a href="#">Loafers & Lace-up Shoes</a></li>
+                                <li><a href="#">Sandals & Slides</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <h4>ACCESSORIES</h4>
+                            <ul>
+                                <li><a href="#">Sunglasses</a></li>
+                                <li><a href="#">Belts</a></li>
+                                <li><a href="#">Hats & Caps</a></li>
+                                <li><a href="#">Scarves</a></li>
+                                <li><a href="#">Bracelets</a></li>
+                                <li><a href="#">Wallets & Card Holders</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <h4>ESSENTIALS</h4>
+                            <ul>
+                                <li><a href="#">Underwear & Socks</a></li>
+                                <li><a href="#">Bags</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">WOMEN</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-column">
+                            <h4>CLOTHING</h4>
+                            <ul>
+                                <li><a href="#">Dresses</a></li>
+                                <li><a href="#">Tops</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Skirts</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <h4>SHOES</h4>
+                            <ul>
+                                <li><a href="#">Heels</a></li>
+                                <li><a href="#">Flats</a></li>
+                                <li><a href="#">Sandals & Slides</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <h4>ACCESSORIES</h4>
+                            <ul>
+                                <li><a href="#">Bags</a></li>
+                                <li><a href="#">Jewelry</a></li>
+                                <li><a href="#">Hats</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">PERFUMES</a></li>
+            </ul>
+        </nav>
+
+        <!-- Centered Logo -->
+        <div class="navbar-logo">
+            <a href="/">
+            <img src="{{url_for('static', filename = 'images/saint-luxury_brand.png')}}" alt="">
+            </a>
+       
+        </div>
+
+        <!-- Right Navigation (Icons) -->
+        <nav class="navbar-main">
+            <ul class="nav-links right">
+                <li class="navbar-icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <a href="#"><i class="fas fa-shopping-bag"></i> <span class="cart-count">0</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#">USD</a>
+                    <div class="dropdown-content currency">
+                        <div class="dropdown-column">
+                            <ul>
+                                <li><a href="#">EUR</a></li>
+                                <li><a href="#">GBP</a></li>
+                                <li><a href="#">JPY</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <section class="section-1" >
+        <hr><hr><hr>
+  	<h2 class="docker">TP Docker B2A</h2>
+        <p class="docker" >Je suis <strong> Fodop Yann</strong>. Bienvenue sur mon premier site conteneurise avec Docker</p>
+        <p class="docker" >Il s'agit d'un site statique d'un prpjet perso.</p>     
+            <img src="{{url_for('static', filename = 'images/saint-luxury_Yhemo-Lee.png')}}"  alt="">
+        
+    </section>
+
+    <section class="section-2">
+        <div class="man-woman">
+            <img src="{{url_for('static', filename = 'images/Men.jpg')}}" alt="">
+            <img src="{{url_for('static', filename = 'images/saintluxury_women-2.jpg')}}" alt="">
+       
+    </section>
+
+    <section class="new-arrivals">
+      
+        <p>New Arrivals</p>
+        <button>SHOP NOW</button>
+    </section>
+
+
+    <section class="trending">
+        <p>trending</p>
+        
+        <div class="parent">
+            <div class="div1"><img src="{{url_for('static', filename = 'images/trending_yhemo-lee-1-400x600.jpg')}}" alt=""></div>
+            <div class="div2"><img src="{{url_for('static', filename = 'images/trending_yhemo-lee-3-400x600.jpg')}}" alt=""></div>
+            <div class="div3"><img src="{{url_for('static', filename = 'images/trending_yhemo-lee-4-400x600.jpg')}}" alt=""></div>
+        </div>
+        
+
+    </section>
+    <section class="contact">
+        
+        <div class="parent2">
+            <div class="div12">
+                <p>Category</p>
+                <hr>
+                <ul>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                </ul>
+            
+            </div>
+            <div class="div22">
+                <p>About us</p><hr>
+                <ul>
+                    <li><a href="">Saint Luxury</a></li>
+                    <li><a href="">Career</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </div>
+
+            <div class="div52">
+                <p>Customer Care</p>
+                <hr>
+                <ul>
+                    <li><a href="">Shipping</a></li>
+                    <li><a href="">Return Policy</a></li>
+                </ul>
+
+            </div>
+            <div class="div42">
+                <p>Social</p><hr>
+                
+                
+            </div>
+            
+        </div>
+            
+    </section>
+
+    <footer>
+        <p>Copyright  &#169 2025 Saint Luxury</p>
+    </footer>
+</body>
+</html>
